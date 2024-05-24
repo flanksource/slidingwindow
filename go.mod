@@ -1,3 +1,3 @@
-module github.com/RussellLuo/slidingwindow
+module github.com/flanksource/slidingwindow
 
-go 1.13
+go 1.22

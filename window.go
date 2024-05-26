@@ -19,6 +19,10 @@ func NewLocalWindow() (*LocalWindow, StopFunc) {
 	return &LocalWindow{}, func() {}
 }
 
+func (w *LocalWindow) SetStart(s time.Time) {
+	w.start = s.UnixNano()
+}
+
 func (w *LocalWindow) Start() time.Time {
 	return time.Unix(0, w.start)
 }
